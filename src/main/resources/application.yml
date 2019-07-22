@@ -1,0 +1,31 @@
+server:
+  port: 9001
+
+security:
+  auth:
+    enable: false
+    keyId: b42371b7-3ea3-4b79-84db-c22b8092498a
+
+byPassLtpaStr: health,HealthCheck,swagger,swagger-ui,api-docs,actuator
+
+# MongoDB
+spring:
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: test
+
+# Urls for internal services
+apiSettings:
+  connectionTimeOut: 60000
+  readTimeOut: 60000
+  myBusinessService:
+    endPoint: http://xxxx:9002/api/v1/test
+
+logging:
+  file: C:/tmp/log/spring-boot-mongo.log
+  pattern:
+    level: "[trace=%X{LOGID}] %5p"
+  level:
+    com.example: INFO
