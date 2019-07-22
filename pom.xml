@@ -10,7 +10,7 @@
 	<groupId>com.example</groupId>
 	<artifactId>spring-boot-mongo</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
-	<name>baggage-wrapper</name>
+	<name>spring-boot-mongo</name>
 	<description>Sample application for Spring Boot with MongoDB</description>
 
 	<properties>
@@ -146,7 +146,7 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-assembly-plugin</artifactId>
 				<configuration>
-					<finalName>baggage-wrapper</finalName>
+					<finalName>spring-boot-mongo</finalName>
 					<appendAssemblyId>false</appendAssemblyId>
 					<descriptors>
 						<descriptor>src/main/assembly/assembly.xml</descriptor>

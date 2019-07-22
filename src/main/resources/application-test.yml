@@ -12,7 +12,7 @@ byPassLtpaStr: health,HealthCheck,swagger,swagger-ui,api-docs,actuator
 apiSettings:
   connectionTimeOut: 60000
   readTimeOut: 60000
-  engineBaggageService:
+  myBusinessService:
     endPoint: http://xxxx:9002/api/v1/test
 
 logging:

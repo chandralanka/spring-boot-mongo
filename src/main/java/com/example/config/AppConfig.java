@@ -40,7 +40,7 @@ public class AppConfig {
 	@Bean(name = "contextLoggingFilter")
 	public FilterRegistrationBean<ContextLoggingFilter> contextLoggingFilter() {
 		final FilterRegistrationBean<ContextLoggingFilter> registrationBean = new FilterRegistrationBean<ContextLoggingFilter>();
-		registrationBean.setFilter(new ContextLoggingFilter("baggage-wrapper"));
+		registrationBean.setFilter(new ContextLoggingFilter("spring-boot-mongo"));
 		registrationBean.addUrlPatterns("/*");
 		registrationBean.setOrder(1);
 		return registrationBean;
